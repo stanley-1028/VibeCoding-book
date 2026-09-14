@@ -85,7 +85,7 @@ node scripts/check-units.mjs
 .
 ├─ README.md               # 你在這裡
 ├─ CONTRIBUTING.md         # 貢獻指南
-├─ LICENSE                 # MIT
+├─ LICENSE                 # CC BY 4.0
 ├─ templates/
 │  └─ unit-template.md     # 教材模板
 ├─ paths/                  # 三條學習路徑定義
@@ -97,4 +97,4 @@ node scripts/check-units.mjs
 
 ## 授權
 
-本教材採 [MIT 授權](./LICENSE)。
+本教材採 [創用 CC 姓名標示 4.0 國際（CC BY 4.0）授權](./LICENSE)。
