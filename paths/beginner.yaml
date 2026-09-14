@@ -1,0 +1,12 @@
+path: beginner
+title: 入門路徑
+description: 從零開始認識 Vibe Coding：建立環境、學會與 AI 溝通、親手完成第一個可用的作品。
+units:
+  - what-is-vibe-coding
+  - setup-ai-environment
+  - prompt-basics
+  - spec-then-build
+  - read-ai-code
+  - debug-with-ai
+  - iterate-and-refine
+  - first-project

@@ -1,0 +1,9 @@
+path: advanced
+title: 進階路徑
+description: 以工程方法駕馭 AI：規格驅動開發、多代理工作流、品質安全、評測與上線。
+units:
+  - spec-driven-development
+  - multi-agent-workflows
+  - code-quality-security
+  - evaluation-and-observability
+  - capstone-project
