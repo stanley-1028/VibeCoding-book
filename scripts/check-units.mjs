@@ -11,6 +11,9 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const DOCS = join(ROOT, "docs");
 const PATHS = join(ROOT, "paths");
 
+// 統一換行，避免 Windows（CRLF）checkout 被誤判為缺少 frontmatter。
+const readText = (file) => readFileSync(file, "utf8").replace(/\r\n/g, "\n");
+
 const ALLOWED = {
   level: ["beginner", "intermediate", "advanced"],
   path: ["beginner", "intermediate", "advanced"],
@@ -104,7 +107,7 @@ function checkLinks(file, body) {
 }
 
 function checkPathFile(pathFile) {
-  const text = readFileSync(pathFile, "utf8");
+  const text = readText(pathFile);
   const units = [];
   let inUnits = false;
   for (const raw of text.split("\n")) {
@@ -132,7 +135,7 @@ function main() {
 
   for (const f of docs) {
     const file = join(DOCS, f);
-    const text = readFileSync(file, "utf8");
+    const text = readText(file);
     const parsed = parseFrontmatter(file, text);
     if (!parsed) continue;
     checkFrontmatter(file, parsed.data);

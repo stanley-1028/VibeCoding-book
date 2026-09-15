@@ -76,6 +76,6 @@ node scripts/check-units.mjs
 ## 審核流程
 
 1. 貢獻者開 PR，說明新增/修訂內容。
-2. 維護者檢查格式（CI 自動）與內容品質（人工）。
+2. 維護者執行 `node scripts/check-units.mjs` 檢查格式，並人工檢查內容品質。
 3. 至少一位維護者核准後合併。
 4. 超過 12 個月未更新的單元，維護者可將 `status` 標記為 `stale` 並開 Issue 追蹤。
